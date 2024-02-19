@@ -1,0 +1,13 @@
+python libraries :
+  1 pytest
+  2 numpy
+  3 pandas
+  4 keras
+  5 tensorflow
+  6 matplotlib
+  7 django
+
+html, css and javascript
+
+R 
+
