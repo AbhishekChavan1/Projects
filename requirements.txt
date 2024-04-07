@@ -7,7 +7,7 @@ python libraries :
   6 matplotlib
   7 django
 
-html, css and javascript
-
+html, css, javascript, bootstrap
+Dialogflow
 R 
 
