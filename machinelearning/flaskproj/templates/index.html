@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prediction Form</title>
+    <meta name="description" content="Machine Learning Prediction Form">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>Form to Fill</h1>
+    <div>
+        <form action="/" method="post">
+            <label for="time_spent">Daily Time Spent on Site:</label>
+            <input type="number" step="0.01" id="time_spent" name="time_spent" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="income">Area Income:</label>
+            <input type="number" step="0.01" id="income" name="income" required><br><br>
+
+            <label for="internet_usage">Daily Internet Usage:</label>
+            <input type="number" step="0.01" id="internet_usage" name="internet_usage" required><br><br>
+
+            <label for="male">Gender:</label>
+            <select id="male" name="male" required>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select><br><br>        
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+
+    <div id="prediction-result">
+        {% if prediction is not none %}
+            <h2>Prediction Result: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
